@@ -1,0 +1,391 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\k.odonell\\source\\repos\\BlazorCardGame\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BBDEC3E2-FCE7-4D17-ABFB-F94B52019BC9}|BlazorCardGame\\BlazorCardGame.Client\\BlazorCardGame.Client.csproj|c:\\users\\k.odonell\\source\\repos\\blazorcardgame\\blazorcardgame\\blazorcardgame.client\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBDEC3E2-FCE7-4D17-ABFB-F94B52019BC9}|BlazorCardGame\\BlazorCardGame.Client\\BlazorCardGame.Client.csproj|solutionrelative:blazorcardgame\\blazorcardgame.client\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBDEC3E2-FCE7-4D17-ABFB-F94B52019BC9}|BlazorCardGame\\BlazorCardGame.Client\\BlazorCardGame.Client.csproj|c:\\users\\k.odonell\\source\\repos\\blazorcardgame\\blazorcardgame\\blazorcardgame.client\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBDEC3E2-FCE7-4D17-ABFB-F94B52019BC9}|BlazorCardGame\\BlazorCardGame.Client\\BlazorCardGame.Client.csproj|solutionrelative:blazorcardgame\\blazorcardgame.client\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBDEC3E2-FCE7-4D17-ABFB-F94B52019BC9}|BlazorCardGame\\BlazorCardGame.Client\\BlazorCardGame.Client.csproj|c:\\users\\k.odonell\\source\\repos\\blazorcardgame\\blazorcardgame\\blazorcardgame.client\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBDEC3E2-FCE7-4D17-ABFB-F94B52019BC9}|BlazorCardGame\\BlazorCardGame.Client\\BlazorCardGame.Client.csproj|solutionrelative:blazorcardgame\\blazorcardgame.client\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{217E0940-0407-4A3A-9236-6EFE311F09CC}|BlazorCardGame\\BlazorCardGame\\BlazorCardGame.csproj|c:\\users\\k.odonell\\source\\repos\\blazorcardgame\\blazorcardgame\\blazorcardgame\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{217E0940-0407-4A3A-9236-6EFE311F09CC}|BlazorCardGame\\BlazorCardGame\\BlazorCardGame.csproj|solutionrelative:blazorcardgame\\blazorcardgame\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{217E0940-0407-4A3A-9236-6EFE311F09CC}|BlazorCardGame\\BlazorCardGame\\BlazorCardGame.csproj|c:\\users\\k.odonell\\source\\repos\\blazorcardgame\\blazorcardgame\\blazorcardgame\\components\\pages\\game.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{217E0940-0407-4A3A-9236-6EFE311F09CC}|BlazorCardGame\\BlazorCardGame\\BlazorCardGame.csproj|solutionrelative:blazorcardgame\\blazorcardgame\\components\\pages\\game.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBDEC3E2-FCE7-4D17-ABFB-F94B52019BC9}|BlazorCardGame\\BlazorCardGame.Client\\BlazorCardGame.Client.csproj|c:\\users\\k.odonell\\source\\repos\\blazorcardgame\\blazorcardgame\\blazorcardgame.client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBDEC3E2-FCE7-4D17-ABFB-F94B52019BC9}|BlazorCardGame\\BlazorCardGame.Client\\BlazorCardGame.Client.csproj|solutionrelative:blazorcardgame\\blazorcardgame.client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{217E0940-0407-4A3A-9236-6EFE311F09CC}|BlazorCardGame\\BlazorCardGame\\BlazorCardGame.csproj|c:\\users\\k.odonell\\source\\repos\\blazorcardgame\\blazorcardgame\\blazorcardgame\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{217E0940-0407-4A3A-9236-6EFE311F09CC}|BlazorCardGame\\BlazorCardGame\\BlazorCardGame.csproj|solutionrelative:blazorcardgame\\blazorcardgame\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBDEC3E2-FCE7-4D17-ABFB-F94B52019BC9}|BlazorCardGame\\BlazorCardGame.Client\\BlazorCardGame.Client.csproj|c:\\users\\k.odonell\\source\\repos\\blazorcardgame\\blazorcardgame\\blazorcardgame.client\\pages\\game.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBDEC3E2-FCE7-4D17-ABFB-F94B52019BC9}|BlazorCardGame\\BlazorCardGame.Client\\BlazorCardGame.Client.csproj|solutionrelative:blazorcardgame\\blazorcardgame.client\\pages\\game.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{217E0940-0407-4A3A-9236-6EFE311F09CC}|BlazorCardGame\\BlazorCardGame\\BlazorCardGame.csproj|c:\\users\\k.odonell\\source\\repos\\blazorcardgame\\blazorcardgame\\blazorcardgame\\playerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{217E0940-0407-4A3A-9236-6EFE311F09CC}|BlazorCardGame\\BlazorCardGame\\BlazorCardGame.csproj|solutionrelative:blazorcardgame\\blazorcardgame\\playerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBDEC3E2-FCE7-4D17-ABFB-F94B52019BC9}|BlazorCardGame\\BlazorCardGame.Client\\BlazorCardGame.Client.csproj|c:\\users\\k.odonell\\source\\repos\\blazorcardgame\\blazorcardgame\\blazorcardgame.client\\blazorcardgame.client.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BBDEC3E2-FCE7-4D17-ABFB-F94B52019BC9}|BlazorCardGame\\BlazorCardGame.Client\\BlazorCardGame.Client.csproj|solutionrelative:blazorcardgame\\blazorcardgame.client\\blazorcardgame.client.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{217E0940-0407-4A3A-9236-6EFE311F09CC}|BlazorCardGame\\BlazorCardGame\\BlazorCardGame.csproj|c:\\users\\k.odonell\\source\\repos\\blazorcardgame\\blazorcardgame\\blazorcardgame\\gamehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{217E0940-0407-4A3A-9236-6EFE311F09CC}|BlazorCardGame\\BlazorCardGame\\BlazorCardGame.csproj|solutionrelative:blazorcardgame\\blazorcardgame\\gamehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 47,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:140:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:141:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:142:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:143:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:144:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:145:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:146:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:147:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:148:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:149:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:150:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:151:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:152:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:153:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:154:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:155:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:156:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:157:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:158:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:159:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:160:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:161:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:162:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:163:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:164:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:165:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:166:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:167:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:168:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:139:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\k.odonell\\source\\repos\\BlazorCardGame\\BlazorCardGame\\BlazorCardGame.Client\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "BlazorCardGame\\BlazorCardGame.Client\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\k.odonell\\source\\repos\\BlazorCardGame\\BlazorCardGame\\BlazorCardGame.Client\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "BlazorCardGame\\BlazorCardGame.Client\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-11T12:09:24.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\k.odonell\\source\\repos\\BlazorCardGame\\BlazorCardGame\\BlazorCardGame.Client\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "BlazorCardGame\\BlazorCardGame.Client\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\k.odonell\\source\\repos\\BlazorCardGame\\BlazorCardGame\\BlazorCardGame.Client\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "BlazorCardGame\\BlazorCardGame.Client\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-11T12:09:21.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\k.odonell\\source\\repos\\BlazorCardGame\\BlazorCardGame\\BlazorCardGame.Client\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "BlazorCardGame\\BlazorCardGame.Client\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\k.odonell\\source\\repos\\BlazorCardGame\\BlazorCardGame\\BlazorCardGame.Client\\Pages\\Home.razor",
+              "RelativeToolTip": "BlazorCardGame\\BlazorCardGame.Client\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-11T12:09:15.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\Users\\k.odonell\\source\\repos\\BlazorCardGame\\BlazorCardGame\\BlazorCardGame\\Components\\App.razor",
+              "RelativeDocumentMoniker": "BlazorCardGame\\BlazorCardGame\\Components\\App.razor",
+              "ToolTip": "C:\\Users\\k.odonell\\source\\repos\\BlazorCardGame\\BlazorCardGame\\BlazorCardGame\\Components\\App.razor",
+              "RelativeToolTip": "BlazorCardGame\\BlazorCardGame\\Components\\App.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-11T12:09:05.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GameHub.cs",
+              "DocumentMoniker": "C:\\Users\\k.odonell\\source\\repos\\BlazorCardGame\\BlazorCardGame\\BlazorCardGame\\GameHub.cs",
+              "RelativeDocumentMoniker": "BlazorCardGame\\BlazorCardGame\\GameHub.cs",
+              "ToolTip": "C:\\Users\\k.odonell\\source\\repos\\BlazorCardGame\\BlazorCardGame\\BlazorCardGame\\GameHub.cs",
+              "RelativeToolTip": "BlazorCardGame\\BlazorCardGame\\GameHub.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAABRwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T11:03:47.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BlazorCardGame.Client.csproj",
+              "DocumentMoniker": "C:\\Users\\k.odonell\\source\\repos\\BlazorCardGame\\BlazorCardGame\\BlazorCardGame.Client\\BlazorCardGame.Client.csproj",
+              "RelativeDocumentMoniker": "BlazorCardGame\\BlazorCardGame.Client\\BlazorCardGame.Client.csproj",
+              "ToolTip": "C:\\Users\\k.odonell\\source\\repos\\BlazorCardGame\\BlazorCardGame\\BlazorCardGame.Client\\BlazorCardGame.Client.csproj",
+              "RelativeToolTip": "BlazorCardGame\\BlazorCardGame.Client\\BlazorCardGame.Client.csproj",
+              "ViewState": "AgIAABMAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-11T10:55:28.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Game.razor",
+              "DocumentMoniker": "C:\\Users\\k.odonell\\source\\repos\\BlazorCardGame\\BlazorCardGame\\BlazorCardGame.Client\\Pages\\Game.razor",
+              "RelativeDocumentMoniker": "BlazorCardGame\\BlazorCardGame.Client\\Pages\\Game.razor",
+              "ToolTip": "C:\\Users\\k.odonell\\source\\repos\\BlazorCardGame\\BlazorCardGame\\BlazorCardGame.Client\\Pages\\Game.razor",
+              "RelativeToolTip": "BlazorCardGame\\BlazorCardGame.Client\\Pages\\Game.razor",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAowHkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-11T10:55:10.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PlayerService.cs",
+              "DocumentMoniker": "C:\\Users\\k.odonell\\source\\repos\\BlazorCardGame\\BlazorCardGame\\BlazorCardGame\\PlayerService.cs",
+              "RelativeDocumentMoniker": "BlazorCardGame\\BlazorCardGame\\PlayerService.cs",
+              "ToolTip": "C:\\Users\\k.odonell\\source\\repos\\BlazorCardGame\\BlazorCardGame\\BlazorCardGame\\PlayerService.cs",
+              "RelativeToolTip": "BlazorCardGame\\BlazorCardGame\\PlayerService.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAQwAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T10:53:03.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Game.razor",
+              "DocumentMoniker": "C:\\Users\\k.odonell\\source\\repos\\BlazorCardGame\\BlazorCardGame\\BlazorCardGame\\Components\\Pages\\Game.razor",
+              "RelativeDocumentMoniker": "BlazorCardGame\\BlazorCardGame\\Components\\Pages\\Game.razor",
+              "ToolTip": "C:\\Users\\k.odonell\\source\\repos\\BlazorCardGame\\BlazorCardGame\\BlazorCardGame\\Components\\Pages\\Game.razor",
+              "RelativeToolTip": "BlazorCardGame\\BlazorCardGame\\Components\\Pages\\Game.razor",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAtwHkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-11T10:47:49.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\k.odonell\\source\\repos\\BlazorCardGame\\BlazorCardGame\\BlazorCardGame\\Program.cs",
+              "RelativeDocumentMoniker": "BlazorCardGame\\BlazorCardGame\\Program.cs",
+              "ToolTip": "C:\\Users\\k.odonell\\source\\repos\\BlazorCardGame\\BlazorCardGame\\BlazorCardGame\\Program.cs",
+              "RelativeToolTip": "BlazorCardGame\\BlazorCardGame\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T10:46:41.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\k.odonell\\source\\repos\\BlazorCardGame\\BlazorCardGame\\BlazorCardGame.Client\\Program.cs",
+              "RelativeDocumentMoniker": "BlazorCardGame\\BlazorCardGame.Client\\Program.cs",
+              "ToolTip": "C:\\Users\\k.odonell\\source\\repos\\BlazorCardGame\\BlazorCardGame\\BlazorCardGame.Client\\Program.cs",
+              "RelativeToolTip": "BlazorCardGame\\BlazorCardGame.Client\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T10:40:45.963Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
