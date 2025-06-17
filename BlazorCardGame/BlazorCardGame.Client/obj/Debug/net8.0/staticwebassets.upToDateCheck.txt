@@ -1,4 +1,0 @@
-wwwroot\appsettings.Development.json
-wwwroot\appsettings.json
-wwwroot\index.html
-wwwroot\scripts\player.js
