@@ -1,0 +1,121 @@
+@page "/game"
+@using Microsoft.AspNetCore.SignalR.Client
+@using BlazorCardGame.Shared
+@inject NavigationManager Navigation
+@inject PlayerService PlayerService
+
+<h3>Multiplayer Card Game</h3>
+
+@if (!connected)
+{
+    <p>Connecting...</p>
+}
+else if (string.IsNullOrWhiteSpace(PlayerService.PlayerName))
+{
+    <div>
+        <label>Enter your name: </label>
+        <input @bind="playerNameInput" placeholder="Your name" />
+        <button @onclick="SetPlayerName">Continue</button>
+    </div>
+}
+else
+{
+    <p>Connected as <b>@PlayerService.PlayerName</b> (<span style="font-size:small">@PlayerService.PlayerId</span>)</p>
+
+    <button @onclick="JoinGame">Join Game</button>
+    <input @bind="card" placeholder="Card to play (e.g., 7H)" />
+    <button @onclick="PlayCard">Play</button>
+
+    <h4>Players:</h4>
+    <ul>
+        @foreach (var p in players)
+        {
+            <li>@p</li>
+        }
+    </ul>
+
+    <h4>Messages:</h4>
+    <ul>
+        @foreach (var msg in messages)
+        {
+            <li>@msg</li>
+        }
+    </ul>
+    @if (!string.IsNullOrEmpty(error))
+    {
+        <p style="color:red">@error</p>
+    }
+}
+
+@code {
+    private HubConnection? hub;
+    private bool connected = false;
+    private List<string> messages = new();
+    private List<string> players = new();
+    private string card = "";
+    private string error = string.Empty;
+    private string playerNameInput = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        hub = new HubConnectionBuilder()
+            .WithUrl(Navigation.ToAbsoluteUri("/gamehub"))
+            .WithAutomaticReconnect()
+            .Build();
+
+        hub.On<string>("PlayerRegistered", id => {
+            messages.Add($"Player ID registered: {id}");
+            InvokeAsync(StateHasChanged);
+        });
+
+        hub.On<string>("PlayerJoined", id => {
+            messages.Add($"Player joined: {id}");
+            InvokeAsync(StateHasChanged);
+        });
+
+        hub.On<string, string>("CardPlayed", (player, card) => {
+            messages.Add($"{player} played: {card}");
+            InvokeAsync(StateHasChanged);
+        });
+
+        hub.On<string>("JoinFailed", msg => {
+            error = msg;
+            InvokeAsync(StateHasChanged);
+        });
+
+        hub.On<string[]>("PlayerList", list => {
+            players = list.ToList();
+            InvokeAsync(StateHasChanged);
+        });
+
+        await hub.StartAsync();
+        connected = true;
+        // Don't register until name is set
+        if (!string.IsNullOrWhiteSpace(PlayerService.PlayerName))
+        {
+            await RegisterPlayer();
+        }
+    }
+
+    private async Task SetPlayerName()
+    {
+        if (!string.IsNullOrWhiteSpace(playerNameInput))
+        {
+            PlayerService.PlayerName = playerNameInput.Trim();
+            await RegisterPlayer();
+            StateHasChanged();
+        }
+    }
+
+    private async Task RegisterPlayer()
+    {
+        await hub.InvokeAsync("RegisterPlayer", PlayerService.PlayerId, PlayerService.PlayerName);
+    }
+
+    private async Task JoinGame()
+    {
+        error = string.Empty;
+        await hub?.InvokeAsync("JoinGame", "game1");
+    }
+    private async Task PlayCard() => await hub?.InvokeAsync("PlayCard", "game1", card);
+}
