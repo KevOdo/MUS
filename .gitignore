@@ -1,0 +1,41 @@
+# .NET build results
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+*.sln.iml
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Logs
+*.log
+
+# Npm packages
+node_modules/
+
+# Blazor publish outputs
+wwwroot/dist/
+
+# Others
+*.dbmdl
+*.db
+*.pdb
+*.cache
+*.config
+*.vspscc
+*.vssscc
+
+# OS generated files
+.DS_Store
+Thumbs.db
