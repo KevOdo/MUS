@@ -15,6 +15,9 @@ obj/
 .idea/
 *.sln.iml
 
+# Visual Studio
+.vs/
+
 # ASP.NET Scaffolding
 ScaffoldingReadMe.txt
 
