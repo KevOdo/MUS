@@ -1,11 +1,21 @@
 using Microsoft.AspNetCore.SignalR;
 using System.Collections.Concurrent;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+public class GameInfo
+{
+    public string GameId { get; set; } = string.Empty;
+    public string Name { get; set; } = string.Empty;
+}
 
 public class GameHub : Hub
 {
     private static Dictionary<string, (string PlayerId, string PlayerName)> Players = new(); // ConnectionId -> (PlayerId, PlayerName)
     private static ConcurrentDictionary<string, HashSet<string>> GamePlayers = new(); // gameId -> set of PlayerIds
     private static ConcurrentDictionary<string, Dictionary<string, string>> GamePlayerNames = new(); // gameId -> (PlayerId -> PlayerName)
+    private static ConcurrentDictionary<string, string> GameNames = new(); // gameId -> game name
 
     public override async Task OnConnectedAsync()
     {
@@ -44,6 +54,25 @@ public class GameHub : Hub
         await Groups.AddToGroupAsync(Context.ConnectionId, gameId);
         await Clients.Group(gameId).SendAsync("PlayerJoined", playerName);
         await Clients.Group(gameId).SendAsync("PlayerList", playerNames.Values.ToArray());
+    }
+
+    public async Task<string> CreateGame(string gameName)
+    {
+        var gameId = Guid.NewGuid().ToString();
+        GamePlayers[gameId] = new HashSet<string>();
+        GamePlayerNames[gameId] = new Dictionary<string, string>();
+        GameNames[gameId] = gameName;
+        await Clients.Caller.SendAsync("GameCreated", gameId, gameName);
+        return gameId;
+    }
+
+    public Task<GameInfo[]> ListAvailableGames()
+    {
+        var available = GamePlayers
+            .Where(kvp => kvp.Value.Count < 4)
+            .Select(kvp => new GameInfo { GameId = kvp.Key, Name = GameNames.TryGetValue(kvp.Key, out var n) ? n : kvp.Key })
+            .ToArray();
+        return Task.FromResult(available);
     }
 
     public async Task PlayCard(string gameId, string card)

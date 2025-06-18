@@ -22,9 +22,28 @@ else
 {
     <p>Connected as <b>@PlayerService.PlayerName</b> (<span style="font-size:small">@PlayerService.PlayerId</span>)</p>
 
-    <button @onclick="JoinGame">Join Game</button>
-    <input @bind="card" placeholder="Card to play (e.g., 7H)" />
-    <button @onclick="PlayCard">Play</button>
+    <div>
+        <input @bind="newGameName" placeholder="Game name" style="width:200px;" />
+        <button @onclick="CreateGame">Create New Game</button>
+        <span style="margin-left:1em;">@((currentGameId != null) ? $"Current Game: {currentGameId} ({currentGameName})" : "")</span>
+    </div>
+    <div style="margin-top:1em;">
+        <button @onclick="LoadGames">Refresh Game List</button>
+        <h5>Available Games:</h5>
+        <ul>
+            @foreach (var g in availableGames)
+            {
+                <li>
+                    <b>@g.Name</b> <span style="font-size:small;color:gray">(@g.GameId)</span>
+                    <button @onclick="() => JoinGame(g.GameId)">Join</button>
+                </li>
+            }
+        </ul>
+    </div>
+    <div style="margin-top:1em;">
+        <input @bind="card" placeholder="Card to play (e.g., 7H)" />
+        <button @onclick="PlayCard" disabled="@(currentGameId == null)">Play</button>
+    </div>
 
     <h4>Players:</h4>
     <ul>
@@ -55,6 +74,16 @@ else
     private string card = "";
     private string error = string.Empty;
     private string playerNameInput = "";
+    private string? currentGameId = null;
+    private string? currentGameName = null;
+    private string newGameName = "";
+    private List<GameInfo> availableGames = new();
+
+    public class GameInfo
+    {
+        public string GameId { get; set; } = string.Empty;
+        public string Name { get; set; } = string.Empty;
+    }
 
     protected override async Task OnInitializedAsync()
     {
@@ -88,6 +117,13 @@ else
             InvokeAsync(StateHasChanged);
         });
 
+        hub.On<string, string>("GameCreated", (gid, gname) => {
+            currentGameId = gid;
+            currentGameName = gname;
+            messages.Add($"Game created: {gname} ({gid})");
+            InvokeAsync(StateHasChanged);
+        });
+
         await hub.StartAsync();
         connected = true;
         // Don't register until name is set
@@ -112,10 +148,39 @@ else
         await hub.InvokeAsync("RegisterPlayer", PlayerService.PlayerId, PlayerService.PlayerName);
     }
 
-    private async Task JoinGame()
+    private async Task CreateGame()
     {
         error = string.Empty;
-        await hub?.InvokeAsync("JoinGame", "game1");
+        if (string.IsNullOrWhiteSpace(newGameName))
+        {
+            error = "Please enter a game name.";
+            return;
+        }
+        var gid = await hub.InvokeAsync<string>("CreateGame", newGameName);
+        currentGameId = gid;
+        currentGameName = newGameName;
+        await JoinGame(gid);
     }
-    private async Task PlayCard() => await hub?.InvokeAsync("PlayCard", "game1", card);
+
+    private async Task LoadGames()
+    {
+        var games = await hub.InvokeAsync<GameInfo[]>("ListAvailableGames");
+        availableGames = games.ToList();
+        StateHasChanged();
+    }
+
+    private async Task JoinGame(string gid)
+    {
+        error = string.Empty;
+        var game = availableGames.FirstOrDefault(g => g.GameId == gid);
+        currentGameId = gid;
+        currentGameName = game?.Name;
+        await hub.InvokeAsync("JoinGame", gid);
+    }
+
+    private async Task PlayCard()
+    {
+        if (currentGameId != null)
+            await hub.InvokeAsync("PlayCard", currentGameId, card);
+    }
 }
